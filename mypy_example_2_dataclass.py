@@ -56,18 +56,20 @@ strudent2 = Student2(
         "age": 33,
         "position": Point(1, 2),
         "friends": [
-            {
-                "name": "pepe",
-                "age": 33,
-                "position": Point(2, 4),
-                "friends": [],
-            }
+            Student2(
+                **{
+                    "name": "pepe",
+                    "age": 33,
+                    "position": Point(2, 4),
+                    "friends": [],
+                }
+            )
         ],
     }
 )
 print(strudent2)
 print(strudent2.name)
-print(strudent2.friends[0]["name"])
+print(strudent2.friends[0].name)
 
 
 class Student3(TypedDict):
