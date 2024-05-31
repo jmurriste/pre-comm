@@ -8,8 +8,16 @@
         "--line-length=119"
     ],
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
     },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
     "python.terminal.launchArgs": [],
     "editor.formatOnSave": true,
     "editor.rulers": [

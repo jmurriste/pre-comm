@@ -12,9 +12,26 @@ Flake8 - A popular linter combining Pyflakes, pycodestyle, and McCabe complexity
 Flake8 + darglint plugging to validate docstream formats/inputs.
 pip install flake8 + config via file configuration (optional) - no vscode plugging 
 pip install darglint + config via flake8 file configuration (optional) - no vscode plugging
+Flake8 + radon plugging to analize code complexity
 
 autoDocstream = https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring
-                vscode plugging.
+                vscode plugging
+
+rado
+n = analize code complexity 
+    https://ericriddoch.notion.site/Code-metrics-like-cyclomatic-complexity-with-Radon-Xenon-and-McCabe-197c5286f12642479e93e73ff4c043d5
+    pip install radon
+            cc             Analyze the given Python modules and compute Cyclomatic Complexity (CC).
+            raw            Analyze the given Python modules and compute raw metrics.
+            mi             Analyze the given Python modules and compute the Maintainability Index.
+            hal            Analyze the given Python modules and compute their Halstead metrics.
+
+
+isort = organize imports
+    pip install isort + vsconfig or use vscode plugging and set the config in preferences
+    requires a configuration file such as isort.conf or others. see doc.
+
+
 
 Category	Linter
 Linter	Pylint - A highly-configurable linter for comprehensive error checking and customizable coding guidelines enforcement.

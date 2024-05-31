@@ -18,7 +18,7 @@ def rest(num_a: int, num_b: int) -> int:
     """Simple Example Using autogen AutoDocStream Generator
 
     Args:
-        num_a (int): num A
+        num_a : num A
         num_b (int): num B
 
     Returns:
@@ -35,5 +35,4 @@ print(rest(10, 20))
 print(rest.__doc__)
 
 
-print(
-    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")  # noqa: E501
+print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")  # noqa: E501
