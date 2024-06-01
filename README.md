@@ -31,7 +31,16 @@ isort = organize imports
     pip install isort + vsconfig or use vscode plugging and set the config in preferences
     requires a configuration file such as isort.conf or others. see doc.
 
+darker = help to link using flake8 the commited lines of codes ("changes) and not the complete document. Incrementing Linting.
 
+example darker --lint "flake8 --exclude"
+example darker --lint "pylint . --exclude"
+
+ruff = linter written in go which automatically includes most of the common linter property as flake8, isort and others.
+    pip install ruff
+    ruff check .
+    ruff check . --fix
+    vscode supported but not from microsoft.
 
 Category	Linter
 Linter	Pylint - A highly-configurable linter for comprehensive error checking and customizable coding guidelines enforcement.

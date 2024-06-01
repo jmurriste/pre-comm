@@ -16,7 +16,12 @@ three_dim_vetor: tuple[int, int, str] = (1, 1, "Jorge")
 three_dim_vetor_T: Tuple[int, int, str] = (1, 1, "Jorge")
 student_to_ages: dict[str, int] = {"bobby": 11, "pedro": 15, "mama": 20}
 fruits: set[str] = {"apple", "kiwi"}
-misc_values: List[Union[int, float, str, type]] = [1, 1.0, "Jorge", object]  # could be any of those types.
+misc_values: List[Union[int, float, str, type]] = [
+    1,
+    1.0,
+    "Jorge",
+    object,
+]  # could be any of those types.
 x: int | float | str
 x = 1
 x = 1.2
@@ -54,6 +59,7 @@ def greet2(name: Optional[str] = None):
     else:
         print(f"Hello {name}")
         return
+
 
 greet2()
 greet2("martin")

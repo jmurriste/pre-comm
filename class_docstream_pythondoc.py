@@ -23,17 +23,12 @@ class Person:  # pylint: disable=too-few-public-methods
     """
 
     def __init__(self, name: str, surname: str, age: int):
-        """
-        Constructs all the necessary attributes for the person object.
+        """_summary_
 
-        Parameters
-        ----------
-            name : str
-                first name of the person
-            surname : str
-                family name of the person
-            age : int
-                age of the person
+        Args:
+            name (str): _description_
+            surname (str): _description_
+            age (int): _description_
         """
 
         self.name = name
@@ -41,19 +36,13 @@ class Person:  # pylint: disable=too-few-public-methods
         self.age = age
 
     def info(self, additional=""):
-        """
-        Prints the person's name and age.
+        """_summary_
 
-        If the argument 'additional' is passed, then it is appended after the main info. # noqa: E501
-
-        Parameters
-        ----------
-        additional : str, optional
-            More info to be displayed (default is None)
-
-        Returns
-        -------
-        None
+        Args:
+            additional (str, optional): _description_. Defaults to "".
         """
 
-        print(f"My name is {self.name} {self.surname}. I am {self.age} years old." + additional) # noqa: E501, E261
+        print(
+            f"My name is {self.name} {self.surname}. I am {self.age} years old."
+            + additional
+        )  # noqa: E501, E261

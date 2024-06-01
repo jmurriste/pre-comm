@@ -56,6 +56,7 @@ def function_with_types_in_docstring(param1, param2):
     Returns:
         bool: The return value. True for success, False otherwise.
     """
+    return None
 
 
 def function_with_pep484_type_annotations(param1: int, param2: str) -> bool:
@@ -69,6 +70,7 @@ def function_with_pep484_type_annotations(param1: int, param2: str) -> bool:
         The return value. True for success, False otherwise.
 
     """
+    return True
 
 
 def module_level_function(param1, param2=None, *args, **kwargs):
@@ -120,8 +122,9 @@ def module_level_function(param1, param2=None, *args, **kwargs):
         ValueError: If `param2` is equal to `param1`.
 
     """
+    return None
     if param1 == param2:
-        raise ValueError('param1 may not be equal to param2')
+        raise ValueError("param1 may not be equal to param2")
     return True
 
 
@@ -213,7 +216,7 @@ class ExampleClass:
         self.attr3 = param3  #: Doc comment *inline* with attribute
 
         #: list(str): Doc comment *before* attribute, with type specified
-        self.attr4 = ['attr4']
+        self.attr4 = ["attr4"]
 
         self.attr5 = None
         """str: Docstring *after* attribute, with type specified."""
@@ -221,7 +224,7 @@ class ExampleClass:
     @property
     def readonly_property(self):
         """str: Properties should be documented in their getter method."""
-        return 'readonly_property'
+        return "readonly_property"
 
     @property
     def readwrite_property(self):
@@ -231,7 +234,7 @@ class ExampleClass:
         If the setter method contains notable behavior, it should be
         mentioned here.
         """
-        return ['readwrite_property']
+        return ["readwrite_property"]
 
     @readwrite_property.setter
     def readwrite_property(self, value):

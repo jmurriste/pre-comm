@@ -1,11 +1,19 @@
 {
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
     "autoDocstring.docstringFormat": "google",
     "pylint.args": [],
     "flake8.args": [
         "--ignore=E305"
     ],
     "black-formatter.args": [
-        "--line-length=119"
+        "--config ${workspaceFolder}/.black.toml"
     ],
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",

@@ -2,13 +2,9 @@ from __future__ import annotations  # no required
 
 from dataclasses import dataclass
 from typing import (
-    Any,
     List,
     NamedTuple,
-    Optional,
-    Tuple,
     TypedDict,
-    Union,
 )
 
 
@@ -57,7 +53,7 @@ strudent2 = Student2(
         "position": Point(1, 2),
         "friends": [
             Student2(
-                **{
+                **{  # type: ignore
                     "name": "pepe",
                     "age": 33,
                     "position": Point(2, 4),
