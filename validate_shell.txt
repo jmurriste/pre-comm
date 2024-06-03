@@ -1,0 +1,13 @@
+EXIT_STATUS = 0
+pip install black pylint flake8 radon ruff isort
+
+black --config .black.toml . || ((EXIT_STATUS++))
+pylint *.py ((EXIT_STATUS++))
+flake8 --config .flake8 ((EXIT_STATUS++))
+mypy . ((EXIT_STATUS++))
+ruff check . ((EXIT_STATUS++))
+isort . --settings .isort.cfg ((EXIT_STATUS++))
+
+echo exiting with $EXIT_STATUS
+
+exit $EXIT_STATUS
